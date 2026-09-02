@@ -38,15 +38,8 @@
 
 ## 安装方式
 
-### 方式一：deb 包安装（推荐）
 
-```bash
-sudo dpkg -i docscanner_3.6.0_all.deb
-```
-
-安装后自动配置桌面图标、应用菜单、系统图标，缺依赖会自动补装。
-
-### 方式二：脚本安装
+### 方式一：脚本安装
 
 ```bash
 tar xzf docscanner_kit_v12.tar.gz
@@ -55,7 +48,7 @@ sudo bash install_docscanner.sh
 
 脚本会安装依赖、复制文件、创建桌面快捷方式。
 
-### 方式三：直接运行
+### 方式二：直接运行
 
 ```bash
 sudo apt install python3 python3-tk python3-pil python3-pil.imagetk sane-utils
