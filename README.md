@@ -4,8 +4,6 @@
 
 纯 Python3 实现，全架构通用（x86\_64 / ARM64 / LoongArch64）。
 
-**作者**: frozenzero123\
-**GitHub**: <https://github.com/frozenzero123/docscanner>\
 **版本**: 3.6.0
 
 ## 功能特性
