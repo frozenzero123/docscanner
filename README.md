@@ -256,7 +256,7 @@ deb 安装布局：
 ### v3.7.5
 
 - 新增 DEB 打包支持（`build_deb.sh`），自动识别 `dpkg --print-architecture`，  
-  支持 `ARCH=<架构>` 覆盖，已验证龙芯麒麟 V10SP1 的 `loongarch64` 包
+  支持 `ARCH=<架构>` 覆盖，已验证麒麟V10SP1 的  龙芯3A600  `loongarch64` 包 和   飞腾D2000  的 `arm` 包
 - deb 安装布局标准化：`/usr/bin` 启动器、桌面菜单项、hicolor 图标、  
   `postinst/prerm/postrm` 维护脚本、各用户桌面快捷方式自动创建/清理
 - 修复 `build_deb.sh`、`install_docscanner.sh` 在 Pillow < 9.1（麒麟自带版本）  
