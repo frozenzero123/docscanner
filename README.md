@@ -36,10 +36,16 @@
 
 ### 方式一：DEB 包安装（推荐）
 
-kit 内已提供按目标架构构建好的 deb 包，例如龙芯麒麟 V10SP1（旧世界）：
+快速构建（自动识别本机架构）
 
 ```bash
-sudo dpkg -i docscanner_3.7.5-1_loongarch64.deb
+cd docscanner_kit_v3.7.5
+bash build_deb.sh
+```
+安装:
+
+```bash
+sudo dpkg -i docscanner_3.7.5-1_***.deb
 # 若提示依赖缺失:
 sudo apt-get install -f
 ```
@@ -54,7 +60,7 @@ sudo apt-get install -f
 ### 方式二：脚本安装（全架构通用）
 
 ```bash
-tar xzf docscanner_kit_v3.7.5.tar.gz
+解压  docscanner_kit_v3.7.5.zip
 cd docscanner_kit_v3.7.5
 sudo bash install_docscanner.sh
 ```
@@ -140,7 +146,6 @@ escl:http://192.168.0.169:80
 ### 快速构建（自动识别本机架构）
 
 ```bash
-tar xzf docscanner_kit_v3.7.5.tar.gz
 cd docscanner_kit_v3.7.5
 bash build_deb.sh
 ```
@@ -291,9 +296,6 @@ deb 安装布局：
 - 安装脚本新增 `python3-fitz`（apt）/ `PyMuPDF`（pip）依赖与安装验证
 - 关于/帮助文本同步更新
 
-### v3.6.0
-
-- 初始版本：手动双面扫描、ADF 批量、PDF/PNG/JPEG 导出、缩略图、eSCL 支持
 
 ## 技术信息
 
